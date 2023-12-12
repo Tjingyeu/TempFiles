@@ -1,0 +1,12 @@
+apiVersion: "agones.dev/v1"
+kind: Fleet
+metadata:
+  name: agar-fleet
+spec:
+  replicas: 5
+  template:
+    spec:
+      ports:
+      - name: default
+        containerPort: 80
+        protocol: TCP
